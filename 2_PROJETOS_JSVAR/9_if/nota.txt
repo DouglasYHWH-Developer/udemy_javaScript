@@ -1,0 +1,2 @@
+Utitlize o terminal do VS para imprimir os resultado.
+Eu acho mais prático.

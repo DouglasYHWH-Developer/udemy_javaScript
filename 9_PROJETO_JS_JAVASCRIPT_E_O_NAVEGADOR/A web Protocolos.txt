@@ -1,0 +1,8 @@
+        A web: Protocolos
+    Um protocolo é uma forma de comunicação entre
+computadores através da rede;
+    O HTTP, serve para nós solicitarmos arquivos, imagens
+e etc (Hyper Text Transfer Protocol);
+    Entramos em sites graças ao protocolo HTTP;
+    SMTP = protoclos para enviar email;
+    TCP = protocolo de transferência;

@@ -1,0 +1,8 @@
+        O que é programação assíncrona?
+    Até agora programamos de uma maneira que uma ação acontecia
+apos a outra;
+    A programação assíncrona traalha nesta questão, ações podem ser 
+executadas ao tempo todo em uma 'fila';
+    Um exemplo: usuário está no chekout, manda salvar seu endereço
+na conta, mas pode prosseguir para a finalização sem recarregar
+a página, pois adicionar endereço ocorre de forma assíncrona;

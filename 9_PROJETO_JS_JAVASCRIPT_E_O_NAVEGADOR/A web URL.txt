@@ -1,0 +1,8 @@
+        A web: URL
+    Cada arquivo que carrega no navegador e nomeado por uma URL;
+    A URL(Uniform Resource Locator) pode ser dividida em três partes:
+protocolo, servidor e arquivo;
+    http://www.horadecodar.com.br/index.html;
+    http = protocolo;
+    www.horadecodar.com.br = servidor(DNS para um IP);
+    index.html = arquivo;

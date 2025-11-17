@@ -1,0 +1,14 @@
+{
+  "name": "02_iniciando_projeto",
+  "version": "1.0.0",
+  "description": "Usando npm init para inicar um projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DBM",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

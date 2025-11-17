@@ -1,0 +1,37 @@
+        O que é uma API
+    Application Programming Interface;
+    Uma maneira de se comunicar via HTTP a um servidor 
+e fazer operações como: visualizar, deletar, criar e atualizar dados;
+    Grandes empresas como FaceBook e Instagram utilizam APIs;
+    Grande parte dos softwares desenvolvidos em Node.js tem uma aPI;
+    E utilizam um framework chamado Express para isso;
+
+        O que é REST e RESTful?
+    Quando falamos em API estamos condicionados a falar de REST e
+RESTful também;
+    REST = Represetantion State Transfer, princípios e regrasque
+permitem criar uma aplicação com interfaces bem definidas;
+    RETful = Capacidade de aplicar os princípios do REST;
+
+        REST e os verbos HTTP
+    Sempre que criamos uma API devemos utilizar os verbos HTTP
+corretos para cada URL da nossa aplicação(veremos isso na prática);
+    . Verbo GET: para solicitar dados;
+    . Verbo POST: para inserir dados;
+    . Verbo Delete: para deletar dados;
+    . Verbo PUT: para atualizar dados;
+
+        Express
+    Um framework web, muito utilizado para criar as aplicações em Node.js;
+    Utiliza em seu core o módulo HTTP para criar as comunicações;
+    Além de outros módulos;
+    Podemos criar uma API com o Express facilmente;
+        
+        O que são rotas?
+    Nos sites e nas APIS temos oq ue chamamos de rotas;
+    Que é basicamente a URL que queremos acessar;
+    Porém quando tratamos de uma API achamos as URLs de rota;
+    No Express vamos criar as nossas rotas para serem acessadas via
+HTTP e responderem baseadas numa lógica que inserimos;
+    E cada rota vai receber um método HTTP, que deve coincidir com
+    o proposto pelo REST, conforme vimos anteriormente;
