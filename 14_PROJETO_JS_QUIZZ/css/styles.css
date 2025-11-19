@@ -1,3 +1,59 @@
-h1{
-    color: red
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Helvetica';
+}
+
+body{
+    background-color: #242940;
+    color: #fff;
+}
+
+#main-title{
+    padding: 40px 0;
+    text-align: center;
+    background-color: #2d425a;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+    display: none !important;
 }
