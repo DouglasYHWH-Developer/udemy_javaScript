@@ -19,7 +19,21 @@ body{
     border-bottom-right-radius: 50px;
 }
 
+/* SCORE CONTAINER */
+#score-container{
+    background-color: #CDDDE8;
+    color: #000;
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+    height: 300px;
+    border-radius: 30px;
+}
 
+#display-score{
+    font-size: 50px;
+    margin-top: 50px;
+}
 
 
 
