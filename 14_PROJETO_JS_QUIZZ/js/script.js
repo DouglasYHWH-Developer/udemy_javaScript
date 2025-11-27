@@ -124,7 +124,6 @@ function createQuestion(i){
   });
   
     //incrementar o número da questão atual
-
   actualQuestion++;
   }
 
