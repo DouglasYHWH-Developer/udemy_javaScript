@@ -91,11 +91,41 @@ function createQuestion(i){
     });
   
     // alterar  texto da pergunta
-    const questionNumber = question.querySelector('#question-number');
     const questionText = question.querySelector('#question-text');
-    questionText.textContent = questions[i].question
+    const questionNumber = question.querySelector('#question-number');
+    questionText.textContent = questions[i].question;
     questionNumber.textContent = i + 1;
     
+
+  // inseri as alternativas
+  questions[i].answers.forEach(function(answer, index){
+    
+    // Cria o template do botão do quizz
+    const answerTemplate = document.querySelector('.answer-template').cloneNode(true);
+    const letterBtn = answerTemplate.querySelector('.btn-letter');
+    const answerText = answerTemplate.querySelector('.question-answer');
+
+    letterBtn.textContent = letters[index];
+    answerText.textContent = answer['answer'];
+
+    //Remover a classe hide e template
+    answerTemplate.classList.remove('hide')
+    answerTemplate.classList.remove('answer-template')
+
+    answerTemplate.setAttribute('correct-answer', answer['correct']);
+    
+    //inserir a alternativa na tela
+    answersBox.appendChild(answerTemplate);
+
+    //Inserir evento de clique no botão
+    answerTemplate.addEventListener('click', function(){
+      console.log(this)
+    });
+  });
+  
+    //incrementar o número da questão atual
+
+  actualQuestion++;
   }
 
 // Inicialização do quizz
