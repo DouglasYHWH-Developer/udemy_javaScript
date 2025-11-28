@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+strong{
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#btnTema{
+    
+    background-color: transparent;
+    height: 40px;
+    align-self: center;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    
+}
+

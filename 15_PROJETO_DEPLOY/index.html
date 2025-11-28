@@ -8,6 +8,36 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <h1>Newsletter</h1>
+    <header class="topo">
+        <div class="container">
+            <strong>Newsletter</strong>
+            <button id="btnTema" class="btn"> Aternar tema 🌗
+               
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="caixa">
+            <h1>Inscreva-se</h1>
+            <p>Receba nossas novidades por e-mail</p>
+            
+            <form>
+                <label for="">Nome:</label>
+                <input type="text" name="nome" placeholder="Seu nome">
+                
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="voc@seuemail.com">
+            
+                <button type="submit" class="btn primario">Quero receber</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <small>Newsletter <span id="ano"></span> </small>
+        </div>
+    </footer>
 </body>
 </html>
