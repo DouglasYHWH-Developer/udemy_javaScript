@@ -4,7 +4,7 @@ const quizzContainer = document.querySelector('#quizz-container');
 const question = document.querySelector('#question');
 const answersBox = document.querySelector('#answers-box');
 const letters = ['a', 'b', 'c', 'd'];
-let poits = 0;
+let points = 0;
 let actualQuestion = 0;
 
 /*Array de perguntas e respostas*/ 
@@ -119,12 +119,47 @@ function createQuestion(i){
 
     //Inserir evento de clique no botão
     answerTemplate.addEventListener('click', function(){
-      console.log(this)
+      checkAnswer(this)
     });
   });
   
     //incrementar o número da questão atual
   actualQuestion++;
+  }
+
+  //verificando resposta do usuário
+  function checkAnswer(btn){
+  // seleciona todos os botões
+    const buttons = answersBox.querySelectorAll('button');
+  // verificar se a resposta está correta e adicionar classes nos botões
+    buttons.forEach(function(button) {
+      if(button.getAttribute('correct-answer') === 'true'){
+        button.classList.add('correct-answer');
+
+        //checar se o usuário acertou a pergunta
+        if(btn === button){
+          //incremento dos pontos
+          points++
+        }
+      }else{
+        button.classList.add('wrong-answer');
+      }
+    });
+
+    // Exibir próxima pergunta
+    nextQuestion();
+  }
+
+  // Exibir próxima pergunta do quizz
+  function nextQuestion(){
+    setTimeout(function(){
+      //verificar se ainda há perguntas
+      if(actualQuestion >= questions.length){
+        //apresentar a mensagem de sucesso
+        
+      }
+      createQuestion(actualQuestion)
+    }, 1500) //timer para usuário ver as respostas}
   }
 
 // Inicialização do quizz
