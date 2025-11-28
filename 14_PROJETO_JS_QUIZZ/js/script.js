@@ -152,16 +152,61 @@ function createQuestion(i){
 
   // Exibir próxima pergunta do quizz
   function nextQuestion(){
+
+    //timer para o usuário ver as respostas
     setTimeout(function(){
+    
       //verificar se ainda há perguntas
       if(actualQuestion >= questions.length){
         //apresentar a mensagem de sucesso
-        
+        showSuccessMessage();
+        return;
       }
-      createQuestion(actualQuestion)
+      createQuestion(actualQuestion);
     }, 1500) //timer para usuário ver as respostas}
   }
 
+// função que exibe a tela final
+function showSuccessMessage(){
+
+  hideOrShowQuizz();
+
+  // trocar dados da tela de sucesso
+
+  //calcular score 
+  const score = ((points / questions.length) * 100).toFixed(2);
+
+  const displayScore = document.querySelector('#display-score span');
+
+  displayScore.textContent = score.toString();
+  console.log(score)
+  // alterar o número de perguntas corretas
+  const correctAnswers = document.querySelector('#correct-answer');
+  correctAnswers.textContent = points;
+
+  // alterar o número total de perguntas
+  const totalQuestions = document.querySelector('#questions-qty');
+  totalQuestions.textContent = questions.length;
+}
+
+
+//mostrar ou esconde o score
+function hideOrShowQuizz(){
+  quizzContainer.classList.toggle('hide');
+  scoreContainer.classList.toggle('hide');
+}
+
+// reiniciar quizz
+
+  const btnRestart = document.querySelector('#restart');
+  btnRestart.addEventListener('click', function(){
+    //zerar as variáveis
+    points = 0;
+    actualQuestion = 0;
+    hideOrShowQuizz();
+    init();
+  });
+  
 // Inicialização do quizz
 init();
 
