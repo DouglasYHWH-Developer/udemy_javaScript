@@ -3,6 +3,17 @@
     --bg: #FFF;
     --text: #111;
     --borda: #e5e7eb;
+    --caixa: #f8fafc;
+    --acao: #2563eb
+
+}
+
+[data-tema="escuro"]{
+    --bg: #0b1220;
+    --text: #e5e7eb;
+    --borda: #1f2937;
+    --caixa: #111827;
+    --acao: #38bdf8;
 }
 
 
@@ -17,9 +28,11 @@ html, body{
 
 body{
     display: flex;
+    flex-direction: column;
     margin: 0;
     min-height: 100vh;
-    font-family: 'Arial', sans-serif;
-
+    font-family: 'Arial';
+    background-color: var(--bg);
+    counter-reset: var(--text);
 }
 
