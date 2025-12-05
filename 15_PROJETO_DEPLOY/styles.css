@@ -33,7 +33,7 @@ body{
     min-height: 100vh;
     font-family: 'Arial';
     background-color: var(--bg);
-    counter-reset: var(--text);
+    color: var(--text);
 }
 
 /*cabecalho*/
